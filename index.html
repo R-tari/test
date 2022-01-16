@@ -5,16 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bx-slieder -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+     
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="./css/defaul.css">
+
+    <!-- 스크립트 -->
+    <script src="./js/hyunki.js"></script>
     
+
     <title>hyunki profile</title>
-    <style>
-        
-    </style>
+    
+    <!-- <script>
+
+      $(function()
+      {
+
+        $('.slider').bxSlider();
+       
+          $('.btn-nav').on(
+              {
+                  'click':function()
+                  {
+                      $('.nav').toggleClass('show-nav');
+                  }
+              }
+          );
+
+          $('.nav li').on(
+              {
+                  'click':function()
+                  {
+                      $('.nav').removeClass('show-nav');
+                  }
+              }
+          )
+
+              
+         
+   
+      })
+    </script> -->
+    
 </head>
 <body>
+    
+        <a class="skip-menu" href="#sns">sns 바로가기</a>
+    
     <div class="wrap">
+
+        
         <header class="header">
-            <div class="container">
+            <div class="container ">
                 <div class="img-box">
                     <img src="./images/profile03.jpg" alt="배너사진">
                 </div>
@@ -32,17 +79,22 @@
                         <li><a href="#self">자기소개</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#self">취미</a></li>
+                        <li><a href="#sliders">취미</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#self">SNS</a></li>
+                        <li><a href="#sns">SNS</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#self">맨위로▲</a></li>
+                        <li><a href="index.html">맨위로▲</a></li>
                     </ul>
                 </nav>
+                
             </div>
         </header>
+
+        <section class="global">
+           
+        </section>
         <section class="wide-sec">
             <siction id="self" class="self">
                 <div class="img-box">
@@ -59,18 +111,18 @@
                 </h2>
             </siction>
 
-            <section class="sliders">
+            <section class="sliders" id="sliders">
                 <div class="slider">
-                    <div><img src="" alt=""></div>
-                    <div><img src="" alt=""></div>
-                    <div><img src="" alt=""></div>
+                    <div><img src="./images/train01.jpg" alt="기차1"></div>
+                    <div><img src="./images/train02.jpg" alt="기차2"></div>
+                    <div><img src="./images/sun.jpg" alt="해변"></div>
                 </div>
                 <h2>
                     취미로 촬영한 사진들
                 </h2>
             </section>
 
-            <sectioin class="sns">
+            <sectioin class="sns" id="sns">
                 <h2>
                     SNS
                 </h2>
@@ -87,17 +139,17 @@
             <p>
                 제작:김현기
             </p>
+            <br>
             <p>
                 본 사이트는 평가용으로 영리목적
                 <br>
                 없이 제작하였습니다.
             </p>
-            <p>
-                2022.01
-            </p>
         </footer>
 
         
     </div>
+
+    
 </body>
 </html>
